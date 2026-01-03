@@ -1,0 +1,106 @@
+{
+    "server": {
+        "debug_level": "info",
+      
+        "redis":{
+            "host":"taskheaven-db-cluster.ce29gutc7ch6.us-west-2.rds.amazonaws.com",
+            "pwd":""
+        }
+    },
+
+    "PORT":3000,
+    "adminEmail":"prince@code-brew.com",
+
+    "databaseSettings": {
+
+        "mongoConnectionString": {
+            "host": "",
+            "user": "",
+            "port": "",
+            "password": "",
+            "database": ""
+        },
+
+        "mySqlConnectionString" : {
+            "host": "127.0.0.1",
+            "user": "root",
+            "password": "root",
+
+            "pool": {
+			    "max": 10,       
+			    "min": 2,        
+			    "acquire": 30000,
+			    "idle": 10000
+            }
+    	},
+        "databaseString":{
+            "ED_FIN_APP": "Ed_Fin_app",
+            "ED_FIN_APP_LOAN": "Ed_Fin_app_loan"
+        }
+    },
+
+    "mongoDb": {
+      "host": "",
+      "user": "",
+      "port":"",
+      "password": "",
+      "database": ""
+    },
+
+    "payment":{},
+
+    "app_type": {
+        "ecomerce":2,
+        "food":1,
+        "home":8
+    },
+
+    "service":{
+        "ecomerce":2,
+        "food":1,
+        "home":8,
+        "common":0
+    },
+
+    "error_msg":{
+      "payment":{
+        "no_gate_way":0,
+        "error":1
+      }
+    },
+
+    "success": {
+        "notification": {
+            "enable":2,
+            "disable": 3
+        }
+    },
+
+    "EmailCredentials": {
+        "email": "",
+        "password": ""
+    },
+    
+    "TwilioCredentials": {
+        "Account_SID": "",
+        "authToken": ""
+    },
+
+    "smtp": {
+        "from_email_key": "from_email",
+        "password_key": "password",
+        "smptp_service_key": "smtp_service_name"
+    },
+
+    "PushNotificationSettings":{
+      "FCMkeySupplier":"",
+      "FCMkeyBranch":"",
+      "GCMkey":"",
+      "pemFile":"",
+      "iosGateway":""
+    },
+
+    "google_keys" : {
+      "google_map_key":""
+    }
+}
